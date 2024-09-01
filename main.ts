@@ -71,17 +71,26 @@ game.onUpdateInterval(200, function () {
     if (rtcModules.readTime(TimeType.DAY) == 0) {
         dayOfWeek.setText("Sunday")
         dayOfWeek.setPosition(80, 7)
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
+    } else if (rtcModules.readTime(TimeType.DAY) == 1) {
+        dayOfWeek.setText("Monday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (rtcModules.readTime(TimeType.DAY) == 2) {
+        dayOfWeek.setText("Tuesday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (rtcModules.readTime(TimeType.DAY) == 3) {
+        dayOfWeek.setText("Wednesday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (rtcModules.readTime(TimeType.DAY) == 4) {
+        dayOfWeek.setText("Thursday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (rtcModules.readTime(TimeType.DAY) == 5) {
+        dayOfWeek.setText("Friday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (rtcModules.readTime(TimeType.DAY) == 6) {
+        dayOfWeek.setText("Saturday")
+        dayOfWeek.setPosition(80, 7)
     } else {
-    	
+        dayOfWeek.setText("Error: Day of week out of bounds")
+        dayOfWeek.setPosition(80, 7)
     }
 })
