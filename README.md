@@ -1,13 +1,13 @@
  
 
 
-> Open this page at [https://silvanzwick.github.io/xwatchos/](https://silvanzwick.github.io/xwatchos/)
+> View this project: [https://silvanzwick.github.io/xwatchos/](https://silvanzwick.github.io/xwatchos/)
 
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://github.com/Ovobot/pxt-xtronpro](https://github.com/Ovobot/pxt-xtronpro)
+* open [https://xmaker.ovobot.cc](https://xmaker.ovobot.cc)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/silvanzwick/xwatchos** and import
@@ -16,7 +16,7 @@ This repository can be added as an **extension** in MakeCode.
 
 To edit this repository in MakeCode.
 
-* open [https://github.com/Ovobot/pxt-xtronpro](https://github.com/Ovobot/pxt-xtronpro)
+* open [https://xmaker.ovobot.cc](https://xmaker.ovobot.cc)
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/silvanzwick/xwatchos** and click import
 
