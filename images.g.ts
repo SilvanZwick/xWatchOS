@@ -126,6 +126,190 @@ bbbbbbbbbbbcccc66666666666666666666666666666666666666666666666666666666666666666
 bbbbbbbbbbbbbbbccccc666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666ccccc333333333333333
 bbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbbbbbbbbbbbbbbbbbbbb
 `;
+            case "image1":
+            case "github-logo":return img`
+...........ffffffffff...........
+.........ffffffffffffff.........
+.......ffffffffffffffffff.......
+......ffffffffffffffffffff......
+.....ffffffffffffffffffffff.....
+....ffffffffffffffffffffffff....
+...ffffffffffffffffffffffffff...
+..ffffff...ffffffffff...ffffff..
+.fffffff................fffffff.
+.fffffff................fffffff.
+ffffffff................ffffffff
+ffffffff................ffffffff
+ffffffff................ffffffff
+ffffffff................ffffffff
+fffffff..................fffffff
+fffffff..................fffffff
+fffffff..................fffffff
+fffffff..................fffffff
+fffffff..................fffffff
+ffffffff................ffffffff
+ffffffff................ffffffff
+ffff..fff..............fffffffff
+.ffff..fff............fffffffff.
+.fffff..fff..........ffffffffff.
+..fffff..ffff.....ffffffffffff..
+...fffff..ffff...ffffffffffff...
+....fffff...f.....ffffffffff....
+.....ffff.........fffffffff.....
+......fffffff.....ffffffff......
+.......ffffff.....fffffff.......
+.........ffff.....fffff.........
+...........ffffffffff...........
+`;
+            case "image2":
+            case "github-logo-white":return img`
+11111111111ffffffffff11111111111
+111111111ffffffffffffff111111111
+1111111ffffffffffffffffff1111111
+111111ffffffffffffffffffff111111
+11111ffffffffffffffffffffff11111
+1111ffffffffffffffffffffffff1111
+111ffffffffffffffffffffffffff111
+11ffffff111ffffffffff111ffffff11
+1fffffff1111111111111111fffffff1
+1fffffff1111111111111111fffffff1
+ffffffff1111111111111111ffffffff
+ffffffff1111111111111111ffffffff
+ffffffff1111111111111111ffffffff
+ffffffff1111111111111111ffffffff
+fffffff111111111111111111fffffff
+fffffff111111111111111111fffffff
+fffffff111111111111111111fffffff
+fffffff111111111111111111fffffff
+fffffff111111111111111111fffffff
+ffffffff1111111111111111ffffffff
+ffffffff1111111111111111ffffffff
+ffff11fff11111111111111fffffffff
+1ffff11fff111111111111fffffffff1
+1fffff11fff1111111111ffffffffff1
+11fffff11ffff11111ffffffffffff11
+111fffff11ffff111ffffffffffff111
+1111fffff111f11111ffffffffff1111
+11111ffff111111111fffffffff11111
+111111fffffff11111ffffffff111111
+1111111ffffff11111fffffff1111111
+111111111ffff11111fffff111111111
+11111111111ffffffffff11111111111
+`;
+            case "image3":
+            case "github-logo-small":return img`
+. . . . . f f f f f f . . . . . 
+. . . f f f f f f f f f f . . . 
+. . f f f f f f f f f f f f . . 
+. f f f f . f f f f . f f f f . 
+. f f f f . . . . . . f f f f . 
+f f f f f . . . . . . f f f f f 
+f f f f . . . . . . . . f f f f 
+f f f f . . . . . . . . f f f f 
+f f f f . . . . . . . . f f f f 
+f f f f . . . . . . . . f f f f 
+f f f f . . . . . . . . f f f f 
+. f f f f f . . . . f f f f f . 
+. f f . . f . . . . f f f f f . 
+. . f f . . . . . . f f f f . . 
+. . . f f f . . . . f f f . . . 
+. . . . . f f f f f f . . . . . 
+`;
+            case "image4":
+            case "github-logo-small-white":return img`
+1 1 1 1 1 f f f f f f 1 1 1 1 1 
+1 1 1 f f f f f f f f f f 1 1 1 
+1 1 f f f f f f f f f f f f 1 1 
+1 f f f f 1 f f f f 1 f f f f 1 
+1 f f f f 1 1 1 1 1 1 f f f f 1 
+f f f f f 1 1 1 1 1 1 f f f f f 
+f f f f 1 1 1 1 1 1 1 1 f f f f 
+f f f f 1 1 1 1 1 1 1 1 f f f f 
+f f f f 1 1 1 1 1 1 1 1 f f f f 
+f f f f 1 1 1 1 1 1 1 1 f f f f 
+f f f f 1 1 1 1 1 1 1 1 f f f f 
+1 f f f f f 1 1 1 1 f f f f f 1 
+1 f f 1 1 f 1 1 1 1 f f f f f 1 
+1 1 f f 1 1 1 1 1 1 f f f f 1 1 
+1 1 1 f f f 1 1 1 1 f f f 1 1 1 
+1 1 1 1 1 f f f f f f 1 1 1 1 1 
+`;
+            case "image5":
+            case "scratch-small":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . 4 4 4 4 4 4 4 4 4 . . 
+. . . . 4 4 1 1 1 1 1 4 1 4 . . 
+. . . 4 4 1 1 4 4 4 1 1 1 4 . . 
+. . . 4 1 1 4 4 . 4 4 4 1 4 . . 
+. . . 4 1 4 4 . . . . 4 4 4 . . 
+. . . 4 1 1 4 4 4 4 . . . . . . 
+. . . 4 4 1 1 1 1 4 4 4 . . . . 
+. . . . 4 4 4 4 1 1 1 4 4 4 4 . 
+. . . . . . . 4 4 4 1 1 1 1 4 . 
+. . . . . . . . . 4 4 4 4 1 4 . 
+. . . 4 4 4 . 4 4 4 4 4 1 1 4 . 
+. . . 4 1 4 4 4 1 1 1 1 1 4 4 . 
+. . . 4 1 1 1 1 1 4 4 4 4 4 . . 
+. . . 4 1 4 4 4 4 4 . . . . . . 
+. . . 4 4 4 . . . . . . . . . . 
+`;
+            case "image6":
+            case "scratch-small-white":return img`
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 4 4 4 4 4 4 4 4 4 1 1 
+1 1 1 1 4 4 1 1 1 1 1 4 1 4 1 1 
+1 1 1 4 4 1 1 4 4 4 1 1 1 4 1 1 
+1 1 1 4 1 1 4 4 1 4 4 4 1 4 1 1 
+1 1 1 4 1 4 4 1 1 1 1 4 4 4 1 1 
+1 1 1 4 1 1 4 4 4 4 1 1 1 1 1 1 
+1 1 1 4 4 1 1 1 1 4 4 4 1 1 1 1 
+1 1 1 1 4 4 4 4 1 1 1 4 4 4 4 1 
+1 1 1 1 1 1 1 4 4 4 1 1 1 1 4 1 
+1 1 1 1 1 1 1 1 1 4 4 4 4 1 4 1 
+1 1 1 4 4 4 1 4 4 4 4 4 1 1 4 1 
+1 1 1 4 1 4 4 4 1 1 1 1 1 4 4 1 
+1 1 1 4 1 1 1 1 1 4 4 4 4 4 1 1 
+1 1 1 4 1 4 4 4 4 4 1 1 1 1 1 1 
+1 1 1 4 4 4 1 1 1 1 1 1 1 1 1 1 
+`;
+            case "image7":
+            case "other-small":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. f f f f f f f f f f f f f f . 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f . . f f f . . f f f . . f f 
+f f . . f f f . . f f f . . f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+. f f f f f f f f f f f f f f . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image8":
+            case "other-small-white":return img`
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 f f f f f f f f f f f f f f 1 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f 1 1 f f f 1 1 f f f 1 1 f f 
+f f 1 1 f f f 1 1 f f f 1 1 f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+1 f f f f f f f f f f f f f f 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+`;
         }
         return null;
     })

@@ -4,6 +4,46 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "bg1"
     },
+    "image1": {
+        "data": "hwQgACAAAAAAAAAAAP///////wAAAAAAAAAAAP//////////AAAAAAAAAPD//////////w8AAAAAAAD/////////////AAAAAADw/////////w///w8AAAAA//////////8P8P//AAAA8P///////////wD//w8AAP///////wAA8P8P8P//AAD//w8AAAAAAADw/wD//wDw//8PAAAAAAAAAP8PAP8P8P//DwAAAAAAAADw/wD/D/////8AAAAAAAAAAP8A////////AAAAAAAAAAD/D////////wAAAAAAAAAA8AAA8P////8AAAAAAAAAAAAAAPD/////AAAAAAAAAAAAAADw/////wAAAAAAAAAAAAAA8P////8AAAAAAAAAAPAAAPD/////AAAAAAAAAAD//////////wAAAAAAAAAA//////////8AAAAAAAAAAP/////w//8PAAAAAAAAAPD///8P8P//DwAAAAAAAAD/////DwD//w8AAAAAAADw/////wAA////////AADw//////8AAPD///////////////8PAAAA////////////////AAAAAPD/////////////DwAAAAAA/////////////wAAAAAAAPD//////////w8AAAAAAAAA//////////8AAAAAAAAAAAD///////8AAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "github-logo"
+    },
+    "image2": {
+        "data": "hwQgACAAAAAREREREf///////xEREREREREREf//////////EREREREREfH//////////x8RERERERH/////////////ERERERHx/////////x///x8RERER//////////8f8f//ERER8f///////////xH//x8REf///////xER8f8f8f//ERH//x8RERERERHx/xH//xHx//8fEREREREREf8fEf8f8f//HxERERERERHx/xH/H/////8REREREREREf8R////////ERERERERERH/H////////xERERERERER8RER8f////8REREREREREREREfH/////ERERERERERERERHx/////xERERERERERERER8f////8REREREREREfEREfH/////ERERERERERH//////////xERERERERER//////////8REREREREREf/////x//8fEREREREREfH///8f8f//HxERERERERH/////HxH//x8RERERERHx/////xER////////ERHx//////8REfH///////////////8fERER////////////////EREREfH/////////////HxERERER/////////////xEREREREfH//////////x8RERERERER//////////8RERERERERERH///////8REREREQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "github-logo-white"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAPD//w8AAADw/////w8AAP///////wDw///////wD/D//wAA8AAP/w8AAADwD////wAAAAAA8P//AAAAAADw//8AAAAAAPD//wAAAAAA8P8PAAAA8P//8P//AADw/w/w////////DwD///////8AAPD/////DwAAAPD//w8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "github-logo-small"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAREfH//x8RERHx/////x8REf///////xHx///////xH/H//xER8REf/x8RERHxH////xERERER8f//ERERERHx//8REREREfH//xERERER8f8fERER8f//8f//ERHx/x/x////////HxH///////8REfH/////HxEREfH//x8REQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "github-logo-small-white"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREAEBERABEEUEEQBFBQBRBEQRAFERAEUQUBAAUBEBBBBREQBQEQEEAFEFAEQRAQQREQURBBEARBEARREEAQBREQBREQQBAEUEAFBRBAEBERAAUEUQAAAAAAEREBAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "scratch-small"
+    },
+    "image6": {
+        "data": "hwQQABAAAAARERERERERERERERERERERERERERERERERQUREEUFERBFEEUEUQRFBQRRBERRBFERBEUQUFBEUFEFBFBREQRQUQUERFEFBERRBQRREQURBFEERFEERREERQRREQRREQRFBEUERFBRBEUFERBEUEUQREREREUREFBEREREREREREQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "scratch-small-white"
+    },
+    "image7": {
+        "data": "hwQQABAAAAAAAP////8AAADw/////w8AAPD/D/D/DwAA8P8P8P8PAADw/////w8AAPD/////DwAA8P////8PAADw/w/w/w8AAPD/D/D/DwAA8P////8PAADw/////w8AAPD/////DwAA8P8P8P8PAADw/w/w/w8AAPD/////DwAAAP////8AAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "other-small"
+    },
+    "image8": {
+        "data": "hwQQABAAAAAREf////8RERHx/////x8REfH/H/H/HxER8f8f8f8fERHx/////x8REfH/////HxER8f////8fERHx/x/x/x8REfH/H/H/HxER8f////8fERHx/////x8REfH/////HxER8f8f8f8fERHx/x/x/x8REfH/////HxEREf////8REQ==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "other-small-white"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
