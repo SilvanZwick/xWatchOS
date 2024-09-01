@@ -23,7 +23,7 @@ function intro () {
     IntroText4.destroy()
     IntroText5.destroy()
     IntroText6.destroy()
-    IntroText7 = textsprite.create("Time since 1997")
+    IntroText7 = textsprite.create("Rad since 1997")
     IntroText7.setPosition(80, 40)
     pause(3000)
     IntroText1.destroy()
