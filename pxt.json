@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "arcade-text": "*"
+        "arcade-text": "*",
+        "xtronpro-rtc": "github:Ovobot/pxt-xtronpro-rtc#1e16738ee2e03f1a346884b44bb3d8f171035ac6"
     },
     "files": [
         "main.blocks",

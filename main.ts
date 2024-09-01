@@ -37,31 +37,51 @@ let IntroText4: TextSprite = null
 let IntroText3: TextSprite = null
 let IntroText2: TextSprite = null
 let IntroText1: TextSprite = null
-intro()
+if (false) {
+    intro()
+}
 scene.setBackgroundImage(assets.image`bg1`)
-let Date = textsprite.create(rtcModules.readTimeInFormat(TimeFormat.FORMATYMD))
-Date.setPosition(80, 20)
-let Time = textsprite.create(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS))
-Time.setMaxFontHeight(10)
-Time.setPosition(80, 40)
-let AMPM = textsprite.create("AM")
-AMPM.setMaxFontHeight(10)
-AMPM.setPosition(80, 57)
+let date = textsprite.create(rtcModules.readTimeInFormat(TimeFormat.FORMATYMD))
+date.setPosition(80, 20)
+let time = textsprite.create(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS))
+time.setMaxFontHeight(10)
+time.setPosition(80, 40)
+let ampm = textsprite.create("AM")
+ampm.setMaxFontHeight(10)
+ampm.setPosition(80, 57)
+let dayOfWeek = textsprite.create(convertToText(rtcModules.readTime(TimeType.DAY)))
+dayOfWeek.setPosition(80, 10)
 game.onUpdateInterval(200, function () {
-    Date.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(5, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(8, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(0, 4))
+    date.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(5, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(8, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(0, 4))
     if (parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) > 12) {
         if (parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) - 12 < 10) {
-            Time.setText("0" + convertToText(parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) - 12) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
+            time.setText("0" + convertToText(parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) - 12) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
         } else {
-            Time.setText("" + convertToText(parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) - 12) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
+            time.setText("" + convertToText(parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) - 12) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
         }
-        AMPM.setText("PM")
+        ampm.setText("PM")
     } else {
         if (parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) < 10) {
-            Time.setText("0" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
+            time.setText("0" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
         } else {
-            Time.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
+            time.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(3, 2) + ":" + rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(6, 2))
         }
-        AMPM.setText("AM")
+        ampm.setText("AM")
+    }
+    if (rtcModules.readTime(TimeType.DAY) == 0) {
+        dayOfWeek.setText("Sunday")
+        dayOfWeek.setPosition(80, 7)
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else {
+    	
     }
 })
