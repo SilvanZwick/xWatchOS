@@ -1,3 +1,7 @@
+function declareDayOfWeek () {
+    dayOfWeek = textsprite.create("a word")
+    dayOfWeek.setPosition(80, 10)
+}
 function intro () {
     scene.setBackgroundColor(15)
     IntroText1 = textsprite.create("xWatchOS")
@@ -30,6 +34,7 @@ function intro () {
     IntroText2.destroy()
     IntroText7.destroy()
 }
+let dayOfWeekText = ""
 let IntroText7: TextSprite = null
 let IntroText6: TextSprite = null
 let IntroText5: TextSprite = null
@@ -37,6 +42,7 @@ let IntroText4: TextSprite = null
 let IntroText3: TextSprite = null
 let IntroText2: TextSprite = null
 let IntroText1: TextSprite = null
+let dayOfWeek: TextSprite = null
 if (false) {
     intro()
 }
@@ -49,8 +55,7 @@ time.setPosition(80, 40)
 let ampm = textsprite.create("AM")
 ampm.setMaxFontHeight(10)
 ampm.setPosition(80, 57)
-let dayOfWeek = textsprite.create(convertToText(rtcModules.readTime(TimeType.DAY)))
-dayOfWeek.setPosition(80, 10)
+declareDayOfWeek()
 game.onUpdateInterval(200, function () {
     date.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(5, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(8, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(0, 4))
     if (parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) > 12) {
@@ -69,28 +74,20 @@ game.onUpdateInterval(200, function () {
         ampm.setText("AM")
     }
     if (rtcModules.readTime(TimeType.DAY) == 0) {
-        dayOfWeek.setText("Sunday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Sunday"
     } else if (rtcModules.readTime(TimeType.DAY) == 1) {
-        dayOfWeek.setText("Monday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Monday"
     } else if (rtcModules.readTime(TimeType.DAY) == 2) {
-        dayOfWeek.setText("Tuesday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Tuesday"
     } else if (rtcModules.readTime(TimeType.DAY) == 3) {
-        dayOfWeek.setText("Wednesday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Wednesday"
     } else if (rtcModules.readTime(TimeType.DAY) == 4) {
-        dayOfWeek.setText("Thursday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Thursday"
     } else if (rtcModules.readTime(TimeType.DAY) == 5) {
-        dayOfWeek.setText("Friday")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Friday"
     } else if (rtcModules.readTime(TimeType.DAY) == 6) {
-        dayOfWeek.setText("Saturday")
-        dayOfWeek.setPosition(80, 7)
-    } else {
-        dayOfWeek.setText("Error: Day of week out of bounds")
-        dayOfWeek.setPosition(80, 7)
+        dayOfWeekText = "Saturday"
     }
+    dayOfWeek.setText(dayOfWeekText)
+    dayOfWeek.setPosition(80, 7)
 })
