@@ -34,6 +34,7 @@ function intro () {
     IntroText2.destroy()
     IntroText7.destroy()
 }
+let monthText = ""
 let dayOfWeekText = ""
 let IntroText7: TextSprite = null
 let IntroText6: TextSprite = null
@@ -56,6 +57,10 @@ let ampm = textsprite.create("AM")
 ampm.setMaxFontHeight(10)
 ampm.setPosition(80, 57)
 declareDayOfWeek()
+let quickView1 = textsprite.create("Quick View 1", 15, 1)
+quickView1.setPosition(80, 105)
+let quickView2 = textsprite.create("Quick View 2", 15, 1)
+quickView2.setPosition(80, 115)
 game.onUpdateInterval(200, function () {
     date.setText("" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(5, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(8, 2) + "/" + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(0, 4))
     if (parseFloat(rtcModules.readTimeInFormat(TimeFormat.FORMATHMS).substr(0, 2)) > 12) {
@@ -88,6 +93,35 @@ game.onUpdateInterval(200, function () {
     } else if (rtcModules.readTime(TimeType.DAY) == 6) {
         dayOfWeekText = "Saturday"
     }
+    if (rtcModules.readTime(TimeType.MONTH) == 1) {
+        monthText = "January"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 2) {
+        monthText = "February"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 3) {
+        monthText = "March"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 4) {
+        monthText = "April"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 5) {
+        monthText = "May"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 6) {
+        monthText = "June"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 7) {
+        monthText = "July"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 8) {
+        monthText = "August"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 9) {
+        monthText = "September"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 10) {
+        monthText = "October"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 11) {
+        monthText = "November"
+    } else if (rtcModules.readTime(TimeType.MONTH) == 12) {
+        monthText = "December"
+    }
     dayOfWeek.setText(dayOfWeekText)
     dayOfWeek.setPosition(80, 7)
+    quickView1.setText("" + dayOfWeekText + ",")
+    quickView1.setPosition(80, 105)
+    quickView2.setText("" + monthText + " " + rtcModules.readTimeInFormat(TimeFormat.FORMATYMD).substr(8, 2) + ", " + rtcModules.readTime(TimeType.YEAR))
+    quickView2.setPosition(80, 115)
 })
