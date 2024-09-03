@@ -14,7 +14,6 @@ This repository can be added as an **extension** in MakeCode.
 * search for **https://github.com/silvanzwick/xwatchos** and import
 
 ## Edit this project ![Build status badge](https://github.com/silvanzwick/xwatchos/workflows/MakeCode/badge.svg)
-^ Don't listen to the status badge, the check that always fails doesn't matter. ^
 
 To edit this repository in MakeCode.
 
