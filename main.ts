@@ -49,7 +49,7 @@ let IntroText3: TextSprite = null
 let IntroText2: TextSprite = null
 let IntroText1: TextSprite = null
 let dayOfWeek: TextSprite = null
-if (true) {
+if (false) {
     intro()
 }
 scene.setBackgroundImage(assets.image`bg1`)
