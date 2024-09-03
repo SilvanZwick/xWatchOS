@@ -4,9 +4,8 @@
 > View this project: [https://silvanzwick.github.io/xwatchos/](https://silvanzwick.github.io/xwatchos/)
 
 ## Use as Extension
-^ This project is not intended to be used as an extension. ^
-
 This repository can be added as an **extension** in MakeCode.
+> Please do not add this project as an extension, as it will simply run the project's code with no way to stop it.
 
 * open [https://xmaker.ovobot.cc](https://xmaker.ovobot.cc)
 * click on **New Project**
